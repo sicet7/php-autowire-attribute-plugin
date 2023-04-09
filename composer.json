@@ -1,0 +1,28 @@
+{
+    "name": "sicet7/php-autowire-attribute-plugin",
+    "description": "Autowiring attribute plugin",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sicet7\\AutowireAttribute\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Martin René Sørensen",
+            "email": "git@sicet7.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "sicet7/php-plugin-container": "dev-master",
+        "roave/better-reflection": "^6.8"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sicet7/php-plugin-container.git"
+        }
+    ]
+}
