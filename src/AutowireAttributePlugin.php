@@ -29,6 +29,7 @@ class AutowireAttributePlugin implements PluginInterface
     /**
      * @param MutableDefinitionSourceHelper $source
      * @return void
+     * @throws \ReflectionException
      */
     public function register(MutableDefinitionSourceHelper $source): void
     {
