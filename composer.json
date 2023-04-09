@@ -16,6 +16,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
+        "php": ">=8.2",
         "sicet7/php-plugin-container": "dev-master",
         "roave/better-reflection": "^6.8"
     },
