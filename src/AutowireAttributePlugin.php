@@ -33,7 +33,7 @@ class AutowireAttributePlugin implements PluginInterface
     public function register(MutableDefinitionSourceHelper $source): void
     {
         foreach ($this->reflector->reflectAllClasses() as $class) {
-            if(count($class->getAttributesByInstance(Autowire::class)) == 0) {
+            if(count((new \ReflectionClass($class->getName()))->getAttributes(Autowire::class, \ReflectionAttribute::IS_INSTANCEOF)) == 0) {
                 continue;
             }
             $source->autowire($class->getName(), $class->getName());
