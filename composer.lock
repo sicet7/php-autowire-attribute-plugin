@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb0e48966b2951ff00803e8786d8a22a",
+    "content-hash": "0c3f950f677b418b3caca42031409cf2",
     "packages": [
         {
             "name": "jetbrains/phpstorm-stubs",
@@ -471,12 +471,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sicet7/php-plugin-container.git",
-                "reference": "0c5dd7a81182058b0cedb0db41df314f3235b005"
+                "reference": "816a85ebad7e6631eca57902c7a90a3024781d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sicet7/php-plugin-container/zipball/0c5dd7a81182058b0cedb0db41df314f3235b005",
-                "reference": "0c5dd7a81182058b0cedb0db41df314f3235b005",
+                "url": "https://api.github.com/repos/sicet7/php-plugin-container/zipball/816a85ebad7e6631eca57902c7a90a3024781d61",
+                "reference": "816a85ebad7e6631eca57902c7a90a3024781d61",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                 "source": "https://github.com/sicet7/php-plugin-container/tree/master",
                 "issues": "https://github.com/sicet7/php-plugin-container/issues"
             },
-            "time": "2023-04-09T22:15:51+00:00"
+            "time": "2023-04-14T18:12:20+00:00"
         }
     ],
     "packages-dev": [],
@@ -515,7 +515,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=8.2"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
 }
