@@ -29,12 +29,11 @@ class AutowireAttributePlugin implements PluginInterface
     /**
      * @param MutableDefinitionSourceHelper $source
      * @return void
-     * @throws \ReflectionException
      */
     public function register(MutableDefinitionSourceHelper $source): void
     {
         foreach ($this->reflector->reflectAllClasses() as $class) {
-            if(count((new \ReflectionClass($class->getName()))->getAttributes(Autowire::class, \ReflectionAttribute::IS_INSTANCEOF)) == 0) {
+            if(count($class->getAttributesByInstance(Autowire::class)) === 0) {
                 continue;
             }
             $source->autowire($class->getName(), $class->getName());
